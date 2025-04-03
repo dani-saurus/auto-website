@@ -16,7 +16,7 @@
 <body>
 <div class="topbar">
     <div class="logo">
-        <a href="index.php">
+        <a href="/">
             Rydr.
         </a>
     </div>
@@ -26,7 +26,7 @@
     </form>
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Ons aanbod</a></li>
             <li><a href="#">Hulp nodig?</a></li>
         </ul>
@@ -38,7 +38,7 @@
             <div class="account-dropdown">
                 <ul>
                     <li><img src="assets/images/icons/setting.svg" alt=""><a href="#">Naar account</a></li>
-                    <li><img src="assets/images/icons/logout.svg" alt=""><a href="logout.php">Uitloggen</a></li>
+                    <li><img src="assets/images/icons/logout.svg" alt=""><a href="/actions/logout.php">Uitloggen</a></li>
                 </ul>
             </div>
         </div>

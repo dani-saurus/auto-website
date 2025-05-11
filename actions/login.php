@@ -11,6 +11,4 @@ if (password_verify($_POST['password'], $user['password'])) {
     $_SESSION['id'] = $user['id'];
     $_SESSION['email'] = $user['email'];
     header('Location: /');
-}else{
-    echo 'chaos';
 }

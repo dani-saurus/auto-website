@@ -1,10 +1,7 @@
 <?php
-//session_start();
-
 $requestUri = $_SERVER['REQUEST_URI'];
 $path = trim(parse_url($requestUri, PHP_URL_PATH), '/');
 
-// 👉 Speciale routes voor acties
 if ($path === 'logout') {
     require_once __DIR__ . '/../actions/logout.php';
     exit;
@@ -20,7 +17,6 @@ if ($path === 'register-handler') {
     exit;
 }
 
-// 👉 Fallback naar pagina's
 $page = $path ?: 'home';
 $file = __DIR__ . '/../pages/' . $page . '.php';
 

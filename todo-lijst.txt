@@ -1,5 +1,0 @@
-Beste toekomstige collega:
-De uitgebreide lijst met taken kan je vinden in ons scrumboard.
-Maar hier is een simpele to-do lijst handig in te kijken in je editor.
-
-- de car-details pagina staat visueel goed. Maar moet nog dynamisch de juiste auto en informatie inladen

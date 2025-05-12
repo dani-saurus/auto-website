@@ -1,15 +1,9 @@
-# Enable Apache rewrite engine
-RewriteEngine On
+<IfModule mod_rewrite.c>
+    RewriteEngine On
 
-# Set the base for rewrites to the rental directory
-RewriteBase /rental/
+    # Als je direct naar de root gaat: stuur door naar public/
+    RewriteRule ^$ public/ [L]
 
-# Skip if already in whitelisted directories
-RewriteCond %{REQUEST_URI} ^/rental/(actions|database|includes|pages|public|scss)/ [NC]
-RewriteRule ^ - [L]
-
-# Rule 1: If the request is send to the assets folder, redirect it to the public/assets folder
-RewriteRule ^assets/(.*)$ public/assets/$1 [L]
-
-# Rule 2: For non-file requests, send to index.php with path
-RewriteRule ^(.*)$ public/index.php/$1 [QSA,L]
+    # Alle andere paden (behalve als ze al public/... beginnen) ook
+    RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+</IfModule>

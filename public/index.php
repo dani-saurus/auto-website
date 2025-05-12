@@ -10,7 +10,7 @@
 
 // --- stap 1: Haal het pad op zonder eventuele query-string
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-//OIIIIIIIIIIIIIIIIIIIIIIIIIIi
+
 // --- stap 2: Bepaal het "base path" (map t.o.v. webroot)
 // Onder Herd is dat "/", onder XAMPP bijv. "/rental"
 $baseScript = str_replace('\\','/', dirname($_SERVER['SCRIPT_NAME']));

@@ -45,3 +45,5 @@ if (file_exists($file)) {
     http_response_code(404);
     include __DIR__ . '/../pages/404.php';
 }
+
+// dit is een kut website
